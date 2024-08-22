@@ -1,0 +1,16 @@
+@mixin nube($duration, $delay, $tamaño, $marginT, $opacity){
+    position: absolute;
+    width: 100%;
+    svg{
+        animation-name: nube1;
+        animation-duration:$duration;
+        animation-delay: $delay;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        height: $tamaño ;
+        width: $tamaño;
+        margin-top: $marginT ;
+        color: white;
+        opacity: $opacity ;
+    }
+}

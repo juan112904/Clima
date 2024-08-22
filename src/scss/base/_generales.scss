@@ -1,0 +1,17 @@
+@use './variables' as v;
+html{
+    overflow-x: hidden;
+
+}
+body{
+    height: 100vh;
+    background: v.$colorFondo;
+    position: fixed;
+    background-size: cover;
+    background-attachment: fixed;
+    // background-repeat: no-repeat;
+    overflow-x: hidden;
+    // overflow-y: hidden;
+    position: relative;
+    font-family: "Montserrat Alternates", sans-serif;
+}

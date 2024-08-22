@@ -1,0 +1,197 @@
+.clear {
+  background: linear-gradient(173deg, rgba(223, 194, 8, 0.615) 0%, rgb(28, 180, 197) 33%, rgb(28, 180, 197) 63%) !important;
+}
+
+.clouds {
+  background: gray !important;
+}
+
+html {
+  overflow-x: hidden;
+}
+
+body {
+  height: 100vh;
+  background: linear-gradient(173deg, rgba(223, 194, 8, 0.615) 0%, rgb(28, 180, 197) 33%, rgb(28, 180, 197) 63%);
+  position: fixed;
+  background-size: cover;
+  background-attachment: fixed;
+  overflow-x: hidden;
+  position: relative;
+  font-family: "Montserrat Alternates", sans-serif;
+}
+
+.navbar .navbar-brand {
+  font-family: "Playwrite DK Uloopet", cursive;
+  font-weight: bold;
+  color: white !important;
+}
+
+.ventana-principal {
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0) 0%, rgba(255, 255, 255, 0.05) 33%, rgba(255, 255, 255, 0.1) 63%) !important;
+  border-color: transparent !important;
+  border-top: none !important;
+}
+
+.prediccion {
+  cursor: pointer;
+}
+
+.nube {
+  position: absolute;
+  width: 100%;
+}
+.nube svg {
+  animation-name: nube1;
+  animation-duration: 60s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 400px;
+  width: 400px;
+  margin-top: 0;
+  color: white;
+  opacity: 0.1;
+}
+
+.nube2 {
+  position: absolute;
+  width: 100%;
+}
+.nube2 svg {
+  animation-name: nube1;
+  animation-duration: 30s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 200px;
+  width: 200px;
+  margin-top: 10;
+  color: white;
+  opacity: 0.5;
+}
+
+.nube3 {
+  position: absolute;
+  width: 100%;
+}
+.nube3 svg {
+  animation-name: nube1;
+  animation-duration: 45s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 300px;
+  width: 300px;
+  margin-top: 200px;
+  color: white;
+  opacity: 0.3;
+}
+
+.nube4 {
+  position: absolute;
+  width: 100%;
+}
+.nube4 svg {
+  animation-name: nube1;
+  animation-duration: 45s;
+  animation-delay: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 300px;
+  width: 300px;
+  margin-top: 400px;
+  color: white;
+  opacity: 0.3;
+}
+.nube4 svg {
+  margin-left: -400px;
+}
+
+.nube5 {
+  position: absolute;
+  width: 100%;
+}
+.nube5 svg {
+  animation-name: nube1;
+  animation-duration: 80s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 150px;
+  width: 150px;
+  margin-top: 500px;
+  color: white;
+  opacity: 0.6;
+}
+
+.nube6 {
+  position: absolute;
+  width: 100%;
+}
+.nube6 svg {
+  animation-name: nube1;
+  animation-duration: 35s;
+  animation-delay: 0s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  height: 150px;
+  width: 150px;
+  margin-top: 500px;
+  color: white;
+  opacity: 0.3;
+}
+
+.nube7 {
+  margin-top: 1;
+}
+
+.gota {
+  opacity: 0.9;
+  animation-name: gotas;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+.gota svg {
+  color: white !important;
+}
+
+.copos {
+  animation-name: copos;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes copos {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+@keyframes nube1 {
+  from {
+    margin-left: -400px;
+  }
+  to {
+    margin-left: 120%;
+    @media (min-width: 576px) {
+      margin-left: 120%;
+    }
+  }
+}
+@keyframes gotas {
+  to {
+    transform: translateY(100vh);
+    opacity: 0;
+  }
+}
+body.noche {
+  height: 100vh;
+  background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+  overflow: hidden;
+  filter: drop-shadow(0 0 10px white);
+}
+
+/*# sourceMappingURL=clima.css.map */

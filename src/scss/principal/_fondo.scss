@@ -1,0 +1,122 @@
+@use '../base/mixins' as m;
+@use '../base/variables' as v;
+.nube{ 
+    @include m.nube(60s, 0s, 400px, 0, 0.1);
+}
+.nube2{
+    @include m.nube(30s, 0s, 200px, 10, 0.5);
+}
+
+.nube3{
+    @include m.nube(45s, 0s, 300px, 200px, 0.3);
+}
+.nube4{
+    @include m.nube(45s, 5s, 300px, 400px, 0.3);
+    
+    svg{
+        margin-left: -400px;
+    }
+}
+.nube5{
+    @include m.nube(80s, 0s, 150px, 500px, 0.6);
+}
+.nube6{
+    @include m.nube(35s, 0s, 150px, 500px, 0.3);
+}
+.nube7{
+    margin-top: random($limit: 1);
+}
+.gota{
+    opacity: 0.9;
+    // background-color: white !important;
+    animation-name: gotas;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    // color: antiquewhite !important;
+    svg{
+        color: white !important;
+    }
+}
+.copos{
+    animation-name: copos;
+    animation-duration: 2s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes copos{
+    to{transform: translateY(100vh); opacity: 0; ;}
+}
+
+@keyframes nube1{
+    // @media (min-width:576px){
+        from { 
+            margin-left: -400px;
+        }
+        to { 
+            margin-left: 120%;
+            @media (min-width:576px){
+                margin-left: 120%;
+            }
+        }
+    // }
+    
+    
+}
+@keyframes gotas{
+    // from{transform: translateY(-1200px);}
+    to{transform: translateY(100vh);opacity: 0;}
+}
+
+
+body.noche {
+    height: 100vh;
+    background: radial-gradient(ellipse at bottom, #1b2735 0%, #090a0f 100%);
+    overflow: hidden;
+    filter: drop-shadow(0 0 10px white);
+  }
+  
+//   @function random_range($min, $max) {
+//     $rand: random();
+//     $random_range: $min + floor($rand * (($max - $min) + 1));
+//     @return $random_range;
+//   }
+  
+//   .snow {
+//     $total: 200;
+//     position: absolute;
+//     width: 10px;
+//     height: 10px;
+//     background: white;
+//     border-radius: 50%;
+  
+//     @for $i from 1 through $total {
+//       $random-x: random(1000000) * 0.0001vw;
+//       $random-offset: random_range(-100000, 100000) * 0.0001vw;
+//       $random-x-end: $random-x + $random-offset;
+//       $random-x-end-yoyo: $random-x + calc($random-offset / 2);
+//       $random-yoyo-time: calc(random_range(30000,80000)/100000);
+//       $random-yoyo-y: $random-yoyo-time * 100vh;
+//       $random-scale: random(10000) * 0.0001;
+//       $fall-duration: random_range(10, 30) * 1s;
+//       $fall-delay: random(30) * -1s;
+  
+//       &:nth-child(#{$i}) {
+//         opacity: random(10000) * 0.0001;
+//         transform: translate($random-x, -10px) scale($random-scale);
+//         animation: fall-#{$i} $fall-duration $fall-delay linear infinite;
+//       }
+  
+//       @keyframes fall-#{$i} {
+//         #{percentage($random-yoyo-time)} {
+//           transform: translate($random-x-end, $random-yoyo-y) scale($random-scale);
+//         }
+  
+//         to {
+//           transform: translate($random-x-end-yoyo, 100vh) scale($random-scale);
+//         }
+//       }
+//     }
+//   }
+  

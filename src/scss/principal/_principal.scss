@@ -1,0 +1,20 @@
+@use '../base/variables' as v;
+
+.navbar{
+    .navbar-brand{
+        font-family: "Playwrite DK Uloopet", cursive;
+        font-weight: bold;
+        color: white !important;
+        // font-size: 30px;
+    }
+}
+.ventana-principal{
+    // background: rgb(255, 255, 255) !important;
+    background: v.$colorVentanas !important;
+    border-color: transparent !important;
+    border-top: none !important;
+}
+
+.prediccion{
+    cursor: pointer;
+}

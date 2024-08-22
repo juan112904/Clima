@@ -1,0 +1,10 @@
+$colorVentanas: linear-gradient(180deg, rgba(255,255,255,0) 0%, rgba(255,255,255,0.05) 33%, rgba(255,255,255,0.1) 63%);
+
+$colorFondo: linear-gradient(173deg, rgba(223, 194, 8, 0.615) 0%, rgb(28, 180, 197) 33%, rgb(28, 180, 197) 63%);
+
+.clear{
+    background: $colorFondo !important;
+}
+.clouds{
+    background: gray !important;
+}
