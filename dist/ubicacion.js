@@ -18,7 +18,7 @@ function ubicacion() {
 ubicacion();
 class Weather {
     constructor(endpoint, metodo, posicion = 0) {
-        this.apiKey = `780d6ef3e765951bffec8faf23664f26`;
+        this.apiKey = ``;
         this.endpoint = endpoint + `&appid=${this.apiKey}&units=metric`;
         this.metodo = metodo;
         this.posicion = posicion;
