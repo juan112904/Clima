@@ -57,7 +57,7 @@ interface prediccion{
 }
 
 class Weather{
-    private apiKey:string=`780d6ef3e765951bffec8faf23664f26`;
+    private apiKey:string=``;
     private endpoint:string;
     private metodo?:number;
     private posicion:number;
